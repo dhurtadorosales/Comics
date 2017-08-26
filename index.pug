@@ -1,0 +1,39 @@
+- var ruta= "recursos/"
+- var titulo= "Principal"
+doctype
+html(lang="es")
+    include recursos/plantillas/head.pug
+    body
+        include recursos/plantillas/cabecera.pug
+        section.sectionPrincipal
+            figure
+                a(href=ruta+"paginas/broma_asesina.html")
+                    img(src=ruta+"imagenes/broma_asesina.jpg", alt="La Broma Asesina", title="Batman: La Broma Asesina")
+                figcaption
+                    span Batman: La Broma Asesina.
+                    |La historieta comienza con la visita de Batman al manicomio Arkham para hablar con el Joker sobre...
+            figure
+                a(href=ruta + "paginas/silencio.html")
+                    img(src=ruta + "imagenes/silencio.jpg", alt="Silencio", title="Batman: Silencio")
+                figcaption
+                    span Batman: Silencio.
+                    |Batman está rescatando a un niño secuestrado por Killer Croc, después de lo cual Catwoman roba el dinero del rescate. Mientras Batman se balancea a través de Gotham City en busca de...
+            figure
+                a(href=ruta + "paginas/spiderman.html")
+                    img(src=ruta + "imagenes/spiderman.jpg", alt="El Traje Alienígena", title="Spiderman: El Traje Alienígena")
+                figcaption
+                    span Spiderman: El Traje Alienígena.
+                    |un simbionte llamado Krobaa fue traído a la Tierra y se vinculó con el profesor que lo encontró para adquirir (a través de la simbiosis) el conocimiento de...
+            figure
+                a(href=ruta + "paginas/xmen.html")
+                    img(src=ruta + "imagenes/xmen.jpg", alt="La Canción del Verdugo", title="X-Men: La Canción del Verdugo")
+                figcaption
+                    span X-Men: La Canción del Verdugo.
+                    |Mientras Cable estuvo ausente, Stryfe aprovechó la situación, y haciéndose pasar por Cable, llevó a cabo un intento de...
+            figure
+                a(href=ruta + "paginas/superman.html")
+                    img(src=ruta + "imagenes/superman.jpg", alt="Unchained", title="Superman: Unchained")
+                figcaption
+                    span Superman: Unchained.
+                    |Superman detiene 7 satélites que iban a chocar en la tierra, dejando que un octavo golpeara una base militar abandonada. Superman sospecha...
+        include recursos/plantillas/pie.pug

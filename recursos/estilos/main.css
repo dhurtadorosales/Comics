@@ -1,0 +1,234 @@
+body {
+  font-family: arial;
+  background: radial-gradient(circle 600px at top, #787260, #362D24);
+  background-repeat: no-repeat;
+}
+
+header div {
+  margin-left: 2%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  color: #A49D95;
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 10%;
+}
+
+header nav li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+header nav li a {
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #A49D95;
+}
+
+header nav li a:hover {
+  background-color: #6E9D01;
+  color: #362D24;
+}
+
+header figure {
+  margin-right: 5%;
+}
+
+header label {
+  display: none;
+}
+
+section {
+  width: 70%;
+  padding: 3%;
+  margin: auto;
+  margin-top: 2%;
+  background-color: #797260;
+  color: #362D24;
+}
+
+section p {
+  text-align: justify;
+  margin-bottom: 2%;
+}
+
+section figure {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+section figure img {
+  width: 200px;
+  box-shadow: #362D24 10px 10px;
+}
+
+section figure figcaption {
+  color: #362D24;
+  font-size: 0.9em;
+}
+
+section figure figcaption span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer {
+  color: #797260;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+footer h6 {
+  margin-left: 5%;
+}
+
+footer img {
+  width: 50px;
+}
+
+.sectionPrincipal {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.sectionPaginas h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.sectionPaginas a {
+  padding-top: 2%;
+  color: #362D24;
+}
+
+#fotosPie {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#chMenu {
+  visibility: hidden;
+}
+
+/*Movil Vertical */
+@media screen and (max-width: 480px) {
+  header label {
+    display: block;
+    margin-left: 30px;
+  }
+  header nav {
+    display: none;
+  }
+  header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #A49D95;
+  }
+  header img {
+    margin: auto;
+    width: 150px;
+  }
+  header ul {
+    background-color: #6E9D01;
+  }
+  header li {
+    text-decoration: underline;
+  }
+  .sectionPrincipal {
+    width: 100%;
+    display: block;
+  }
+  .sectionPaginas {
+    width: 100%;
+  }
+  #chMenu {
+    margin-right: 200px;
+  }
+  #chMenu:checked ~ nav {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #6E9D01;
+  }
+  #chMenu:checked ~ nav ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+  }
+  #subTitulo {
+    display: block;
+  }
+}
+
+/*Movil Horizontal*/
+@media screen and (max-width: 768px) {
+  header label {
+    display: block;
+    margin-left: 30px;
+  }
+  header nav {
+    display: none;
+  }
+  header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #A49D95;
+  }
+  header img {
+    width: 150px;
+  }
+  header ul {
+    background-color: #6E9D01;
+  }
+  header li {
+    text-decoration: underline;
+  }
+  .sectionPrincipal {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+  .sectionPaginas {
+    width: 100%;
+  }
+  #chMenu {
+    margin-right: 200px;
+  }
+  #chMenu:checked ~ nav {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #6E9D01;
+  }
+  #chMenu:checked ~ nav ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+  }
+}
